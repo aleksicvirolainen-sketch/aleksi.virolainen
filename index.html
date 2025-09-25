@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My GitHub Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Main Page</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@600&family=Exo:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Welcome to my GitHub Page!</h1>
-  <p>If you see this, it works!</p>
+  <header class="main-header">
+    <h1 class="site-title">Title and Brief description/bio</h1>
+    <p class="site-subtitle">This is meant to be the landing page and main page of the site.</p>
+  </header>
+
+  <nav class="main-nav">
+    <a href="#projects" class="nav-button">Past Projects</a>
+    <a href="#bio" class="nav-button">Bio and Skills</a>
+    <a href="#contact" class="nav-button">Contact Info</a>
+  </nav>
+
+  <main class="content">
+    <section id="latest-project" class="latest-project">
+      <h2 class="section-heading">Latest Project</h2>
+      <img src="images/sample-project.png" alt="Project preview" class="project-img">
+      <p class="project-description">Large space reserved in case of images and text</p>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
