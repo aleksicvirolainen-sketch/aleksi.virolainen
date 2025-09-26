@@ -120,3 +120,27 @@ a.warning {
     grid-template-columns: 1fr; /* single column on mobile */
   }
 }
+/* Navigation (Go Back button alignment) */
+.main-nav {
+  display: flex;
+  justify-content: center; /* centers the button(s) horizontally */
+  margin: 1.5rem 0;
+}
+
+/* Go Back button itself */
+.main-nav .nav-button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-nav .nav-button:hover {
+  background-color: #0047d4; /* blue hover */
+  color: #ffffff;
+}
+
