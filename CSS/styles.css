@@ -86,3 +86,37 @@ a:visited {
 a.warning {
   color: #d90000; /* Red for warnings/attention */
 }
+
+
+/* Grid layout for Bio & Skills (and Contact Info) */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+/* Boxes inside grid */
+.contact-box {
+  background-color: #111111;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Image in contact page */
+.contact-image {
+  max-width: 100%;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr; /* single column on mobile */
+  }
+}
