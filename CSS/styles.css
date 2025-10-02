@@ -165,4 +165,36 @@ a.warning {
 .contact-list a:hover {
   text-decoration: underline;
 }
+/* Past projects list */
+.project-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.project-list li {
+  margin-bottom: 0.5rem;
+}
+
+.project-list a {
+  color: #0047d4;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.project-list a:hover {
+  text-decoration: underline;
+}
+
+/* Latest project styling */
+.latest-project {
+  margin-top: 1rem;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
 
