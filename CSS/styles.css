@@ -197,4 +197,23 @@ a.warning {
   border-radius: 6px;
   margin-bottom: 0.5rem;
 }
+/* Project details list */
+.project-details {
+  list-style-type: disc;
+  margin: 1rem 0 0 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.6;
+}
+
+.project-details li {
+  margin-bottom: 0.4rem;
+}
+
+/* Multiple project images */
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
 
