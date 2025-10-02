@@ -76,4 +76,132 @@ body {
 
 /* Link styles */
 a {
-  color: #0047d4; /
+  color: #0047d4; /* Blue */
+}
+
+a:visited {
+  color: #0047d4;
+}
+
+a.warning {
+  color: #d90000; /* Red for warnings/attention */
+}
+
+/* Grid layout for Bio, Skills, Contact Info, Projects */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+/* Boxes inside grid */
+.contact-box {
+  background-color: #111111;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* ===== IMAGES ===== */
+
+/* Index page latest project image */
+.index-project-image {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+/* Portrait image (contact page) */
+.contact-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* General project images (used in project pages & past projects) */
+.project-image {
+  max-width: 90%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* ===== Lists ===== */
+
+/* Contact info list */
+.contact-list {
+  list-style-type: none;   /* removes bullets */
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-list a {
+  color: #0047d4; /* link blue */
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* Past projects list */
+.project-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.project-list li {
+  margin-bottom: 0.5rem;
+}
+
+.project-list a {
+  color: #0047d4;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.project-list a:hover {
+  text-decoration: underline;
+}
+
+/* Project details list */
+.project-details {
+  list-style-type: disc;
+  margin: 1rem 0 0 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.6;
+}
+
+.project-details li {
+  margin-bottom: 0.4rem;
+}
+
+/* ===== Responsive adjustments ===== */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr; /* stack on mobile */
+  }
+
+  .index-project-image,
+  .contact-image,
+  .project-image {
+    max-width: 100%; /* full width on small screens */
+  }
+}
+
