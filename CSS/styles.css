@@ -205,3 +205,10 @@ a.warning {
   }
 }
 
+/* Highlight current page nav button */
+.nav-button.active {
+  transform: scale(1.1); /* makes it slightly bigger */
+  background-color: #0047d4; /* blue background */
+  color: #ffffff;           /* white text */
+  font-weight: 600;
+}
